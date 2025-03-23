@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     print_r('<br>');
     print_r($_POST['email']);
 
-    include_once('MiguelRocha_conexao.php'); // Incluindo conexão
+    include_once('/src/assets/components/sql/MiguelRocha_conexao.php'); // Incluindo conexão
 
     // Declarando as variáveis para a tabela BD
     $nome = $_POST['nome'];
@@ -44,12 +44,12 @@ if (isset($_POST['submit'])) {
                     <h2>Menu de Opções</h2>
                     <ul>
                         <li><a href="#"></a>Página Incial</li>
-                        <li><a href="/MiguelRocha_index.php"></a>Novo Usuário</li>
-                        <li><a href="/MiguelRocha_listar.html"></a>Listar Usuários</li>
+                        <li><a href="/src/assets/pages/MiguelRocha_index.php"></a>Novo Usuário</li>
+                        <li><a href="/src/assets/pages/MiguelRocha_lista.php"></a>Listar Usuários</li>
                     </ul>
                 </div>
                 <div>
-                    <form action="MiguelRocha_index.php" method="POST">
+                    <form action="/src/assets/pages/MiguelRocha_index.php" method="POST">
                         <h1>Novo Usuário</h1>
                         <br>
                         <span>Nome: </span>
